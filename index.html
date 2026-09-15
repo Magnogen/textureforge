@@ -7,17 +7,18 @@
   <title>Texture Forge | Magnogen</title>
 
   <script src="https://src.magnogen.net/dom.js"></script>
-  <script src="https://src.magnogen.net/col.js"></script>
 
   <script type="module" src="./sketch.js"></script>
 </head>
 <body>
   <div class="canvas">
-    <h1>Texture Forge</h1>
+    <h1 class="title">Texture Forge</h1>
     <canvas id="canvas"></canvas>
   </div>
   <div class="palette">
+    <input type="range" min="0" max="0.9" step="0.01" value="0.5" id="chroma">
     <canvas id="palette"></canvas>
+    <div id="picker"></div>
   </div>
   <a
     class="github-banner"

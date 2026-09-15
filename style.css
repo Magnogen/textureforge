@@ -15,17 +15,58 @@ body {
   font-size: 1rem;
 }
 
+.canvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 1rem;
+  background: #404040;
+}
+
+#picker {
+  display: none;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  transform: translate(-50%, -50%) rotate(45deg) translate(-50%, -50%);
+  pointer-events: none;
+  background: #000;
+  border: #fff solid 2px;
+  border-radius: 100% 100% 0 100%;
+}
+
+canvas#palette {
+  background: #101010;
+  width: 100%;
+}
+
 .github-banner {
   position: fixed;
-  top: 3rem;
-  right: -3rem;
+  top: 2.5rem;
+  left: -3rem;
   z-index: 1;
   width: 13.5rem;
   padding: 0.45rem 0;
   text-align: center;
   color: #101010;
   background: #808080;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   transform-origin: center;
   text-decoration: none;
 }
