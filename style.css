@@ -53,7 +53,7 @@ body {
   transform: translate(-50%, -50%) rotate(45deg) translate(-50%, -50%);
   pointer-events: none;
   background: #000;
-  border: #fff solid 2px;
+  border: #101010 solid 2px;
   border-radius: 100% 100% 0 100%;
 }
 
